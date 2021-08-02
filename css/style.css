@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* introduction section css */
+
+.social-media ul {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    list-style: none;
+    z-index: 100;
+}
+
+.social-media ul li a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #f7dc4f;
+    color: #015761;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-media ul li a:hover {
+    color: #000
+}
+
+.introduction-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1-2 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+header {
+    padding: 20px 50px;
+}
+
+.introduction {
+    background: #015761;
+}
+
+.logo a {
+    font-size: 30px;
+    font-weight: 500;
+    color: #f7dc4f;
+    text-decoration: none;
+}
+
+
+/* nav section css */
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f7dc4f;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #f7dc4f;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* nav ul li:last-child a::after{} */
+
+
+/* nav section css ends */
+
+.introductory-content {
+    max-width: 400px;
+    margin: auto;
+    padding: 150px 0;
+}
+
+.introductory-content h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #f7dc4f;
+}
+
+.introductory-content h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.2;
+}
+
+.introductory-content span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.portfolio-img {
+    background-image: url(../images/portfolio-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+
+/* introduction section css ends */
+
+
+/* resume section css starts */
+
+.resume {
+    background-color: #f1f0f0;
+    padding: 100px 0;
+}
+
+.resume .container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.content {
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 35px;
+    color: #015761;
+    font-weight: 600;
+}
+
+.content p {
+    margin: 30px 0;
+    font-size: 14px;
+    color: #015761;
+}
+
+.content a {
+    background-color: #f7dc4f;
+    border: 1px solid #f7dc4f;
+    color: #015761;
+    font-size: 14px;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.content a:hover {
+    background-color: #fff;
+}
+
+
+/* resume section css ends */
+
+
+/* section title css starts */
+
+.section-title {
+    padding: 50px 0;
+}
+
+.section-title h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #015761;
+}
+
+
+/* section title css ends */
+
+
+/* video section css starts */
+
+.video-section {
+    min-height: 500px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/video-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.video a {
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.video a:hover {
+    color: #f7dc4f;
+}
+
+.video a i {
+    font-size: 35px;
+    margin-right: 10px;
+}
+
+.video a:hover i {
+    color: #f7dc4f;
+}
+
+
+/* video section css ends */
+
+
+/* gallery section css starts */
+
+.gallery-section {
+    margin-bottom: 100px;
+}
+
+.gallery-section .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-1-3 {
+    flex-basis: 30%;
+    margin: 10px;
+}
+
+
+/* gallery section css ends */
+
+
+/* contact section css starts */
+
+.contact-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    background: #015761;
+    padding: 100px 0;
+}
+
+.contact-info {
+    max-width: 60%;
+    margin: auto;
+}
+
+.contact-info h2 {
+    font-size: 50px;
+    color: #f7dc4f;
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.representation-content {
+    margin-bottom: 30px;
+}
+
+.designation {
+    font-weight: 700 !important;
+}
+
+.representation-content h4 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.social-icons ul {
+    list-style: none;
+}
+
+.social-icons ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.social-icons ul li a {
+    transition: all 0.3s ease-in-out;
+}
+
+.social-icons ul li a i {
+    color: #fff;
+}
+
+.social-icons ul li a:hover i {
+    color: #f7dc4f;
+}
+
+
+/* contact section css ends */
+
+
+/* footer css starts */
+
+footer {
+    padding: 20px 0;
+}
+
+footer h5 {
+    text-align: center;
+    color: #015761;
+    letter-spacing: 3px;
+    ;
+}
+
+
+/* footer css ends */
+
+
+/* media query */
+
+@media(max-width: 1200px) {
+    .introductory-content h1 {
+        font-size: 50px;
+    }
+    .section-title h2 {
+        font-size: 45px;
+    }
+    .contact-info h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:992px) {
+    header {
+        padding: 20px 30px;
+    }
+    .introductory-content {
+        max-width: 300px;
+        padding: 80px 0;
+    }
+    .introductory-content h1 {
+        font-size: 38px;
+    }
+    .introductory-content h2 {
+        font-size: 28px;
+    }
+    .introductory-content span {
+        font-size: 12px;
+    }
+    .section-title h2 {
+        font-size: 38px;
+    }
+    .contact-info h2 {
+        font-size: 38px;
+    }
+    .contact-info h3 {
+        font-weight: 500;
+    }
+    .designation {
+        font-weight: 600 !important;
+    }
+    .representation-content h4 {
+        font-size: 15px;
+    }
+    .wrapper {
+        padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    .logo a {
+        font-size: 25px;
+    }
+    nav {
+        margin: 10px 0;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+    nav ul li {
+        margin-right: 15px;
+    }
+    .introductory-content {
+        padding: 30px;
+    }
+    .introductory-content h2 {
+        font-size: 20px;
+    }
+    .introductory-content h1 {
+        font-size: 30px;
+    }
+    .introductory-content span {
+        font-size: 10px;
+    }
+    .resume {
+        padding: 50px 0;
+    }
+    .resume .container {
+        max-width: 600px;
+    }
+    .content h2 {
+        font-size: 30px;
+    }
+    .content p {
+        margin: 22px 0;
+    }
+    .content a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+    .section-title {
+        padding: 30px 0;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .video-section {
+        min-height: 300px;
+    }
+    .gallery-section {
+        margin-bottom: 30px;
+    }
+    .col-1-3 {
+        flex-basis: 30%;
+    }
+    .contact-info {
+        font-size: 30px;
+    }
+    .contact-info h3 {
+        font-size: 16px;
+    }
+    .contact-info h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .representation-content h4 {
+        font-size: 14px;
+    }
+    .social-icons ul li a {
+        font-size: 16px;
+    }
+    .representation-content {
+        margin-bottom: 20px;
+    }
+    .wrapper {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-1-2 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .logo {
+        text-align: center;
+    }
+    nav {
+        margin: 5px 0;
+        text-align: center;
+    }
+    nav ul li {
+        margin: 0 30px;
+    }
+    .introductory-content {
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+        padding: 50px 0;
+    }
+    .resume {
+        padding: 30px 0;
+    }
+    .resume .container {
+        max-width: 500px;
+    }
+    .content p {
+        margin: 15px 0;
+        font-size: 13px;
+    }
+    .content h2 {
+        font-size: 28px;
+    }
+    .section-title {
+        padding: 20px 0;
+    }
+    .section-title h2 {
+        font-size: 28px;
+    }
+    .video-section {
+        min-height: 250px;
+    }
+    .video a {
+        font-size: 16px;
+    }
+    .video a i {
+        font-size: 28px;
+    }
+    .gallery-section .container {
+        max-width: 1000px;
+    }
+    .col-1-3 {
+        flex-basis: 100%;
+    }
+    .gallery-section {
+        margin-bottom: 0;
+    }
+    .contact-info {
+        max-width: 500px;
+        text-align: center;
+    }
+    .representation-content {
+        margin-bottom: 15px;
+    }
+    .social-icons ul li {
+        margin: 0 12px;
+    }
+    .contact-info h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 575px) {
+    nav ul li {
+        margin: 0 15px;
+    }
+    .introductory-content {
+        max-width: 350px;
+    }
+    .introductory-content h2 {
+        font-size: 16px;
+    }
+    .introductory-content h1 {
+        font-size: 25px;
+    }
+    .content h2 {
+        font-size: 25px;
+    }
+    .resume .container {
+        max-width: 400px;
+    }
+    .content p {
+        margin: 10px 0;
+        font-size: 12px;
+    }
+    .content a {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+    .section-title h2 {
+        font-size: 25px;
+    }
+    .contact-info h2 {
+        font-size: 25px;
+    }
+    .contact-info h3 {
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .representation-content h4 {
+        font-size: 12px;
+    }
+    .social-icons ul li a {
+        font-size: 14px;
+    }
+    footer h5 {
+        font-size: 11px;
+    }
+    footer {
+        padding: 10px 0;
+    }
+    .social-media ul li a {
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+    }
+    .social-media ul li a i {
+        font-size: 11px;
+    }
+}
